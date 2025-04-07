@@ -176,8 +176,8 @@ try {
                 renderPlayerCard($card);
             }
         } else {
-            echo '<div class="col-span-full text-center p-6 bg-red-500/10 border border-red-500/20 rounded-lg">';
-            echo '<p class="text-red-300">현재 접속 중인 플레이어가 없습니다.</p>';
+            echo '<div class="col-span-full text-center p-6 bg-[#2a5f9a]/20 border border-[#E63E3E]/30 rounded-lg">';
+            echo '<p class="text-[#b5d0ff]">현재 접속 중인 플레이어가 없습니다.</p>';
             echo '</div>';
         }
         
@@ -186,8 +186,8 @@ try {
         throw new Exception("서버에서 정보를 가져올 수 없습니다.");
     }
 } catch (Exception $e) {
-    echo '<div class="text-center p-6 bg-red-500/10 border border-red-500/20 rounded-lg">';
-    echo '<p class="text-red-300">오류 발생: ' . htmlspecialchars($e->getMessage()) . '</p>';
+    echo '<div class="text-center p-6 bg-[#2a5f9a]/20 border border-[#E63E3E]/30 rounded-lg">';
+    echo '<p class="text-[#b5d0ff]">오류 발생: ' . htmlspecialchars($e->getMessage()) . '</p>';
     echo '</div>';
 } finally {
     if (isset($db)) {

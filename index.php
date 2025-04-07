@@ -16,7 +16,7 @@
         }
         .loading-spinner {
             border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid #ffffff;
+            border-top: 4px solid #E63E3E;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -28,10 +28,10 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-[#0d3f7a] via-[#2a5f9a] to-[#4a7fb9] min-h-screen">
-    <div class="loading-overlay fixed inset-0 bg-[#0d3f7a]/90 backdrop-blur-lg flex flex-col items-center justify-center z-50" id="loadingOverlay">
+<body class="bg-gradient-to-br from-[#242952] via-[#2a5f9a] to-[#E63E3E]/40 min-h-screen">
+    <div class="loading-overlay fixed inset-0 bg-[#242952]/90 backdrop-blur-lg flex flex-col items-center justify-center z-50" id="loadingOverlay">
         <div class="loading-spinner mb-6"></div>
-        <div class="text-white text-xl neon-glow">서버 유저 목록을 불러오는 중입니다...</div>
+        <div class="text-[#b5d0ff] text-xl neon-glow">서버 유저 목록을 불러오는 중입니다...</div>
     </div>
 
     <div id="content" class="container mx-auto px-4 py-16 hidden">
@@ -41,7 +41,7 @@
                     서버 온라인 플레이어 목록
                 </h1>
             </div>
-            <div class="bg-white/20 backdrop-blur-lg rounded-lg p-8 shadow-2xl border border-white/30">
+            <div class="bg-white/20 backdrop-blur-lg rounded-lg p-8 shadow-2xl border border-[#E63E3E]/30">
                 <div id="serverContent"></div>
             </div>
         </div>
